@@ -14,9 +14,10 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "linkedin.com") ||
         dnsDomainIs(host, "*.github.com") ||
         dnsDomainIs(host, "copilot.githubusercontent.com") ||
-        dnsDomainIs(host, "uizard.io")
+        dnsDomainIs(host, "uizard.io")||
+        dnsDomainIs(host, "proxy6.net")
     ) {
-        return "PROXY 5.8.86.121:8000";
+        return "PROXY 177.234.140.61:8000";
     }
     return "DIRECT";
 }
